@@ -1,0 +1,61 @@
+body {
+  background: #81acf7;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+.site-header .navbar-brand {
+  color: #000000;
+}
+
+.site-header .navbar-brand:hover {
+  color: #aec8f5;
+}
+
+.site-header .navbar-nav .nav-item {
+  color: #5c5d5e;
+}
+
+.site-header .navbar-nav .nav-item:hover {
+  color: #AF841E;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  color: #000000;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1.5px solid #dddddd;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding-bottom: 0px;
+}
+
+.article-title {
+  color: #444444;
+  margin-top: 20px; 
+  margin-bottom: 30px
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+a.footer {
+  color: #444444;
+}
+
+a.footer:hover {
+  color: #428bca;
+}
