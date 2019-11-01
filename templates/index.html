@@ -47,16 +47,19 @@
 			  </div>
 			</article>
 			<div class="text-center">
-			    <div style="display:inline-block;">
-					<a href="{{ url_for('tweet') }}" class="btn btn-dark" role="button">
+				<form action="{{ url_for('tweet') }}" method="post">
+		          <input type="hidden" name="status" value="{{ sentence }}">
+		          <div style="display:inline-block;">
+					<button class="btn btn-dark" type="submit">
 						Tweet
-					</a>	
-				</div>
-				<div style="display: inline-block">
+					</button>	
+				  </div>
+				  <div style="display: inline-block">
 					<a href="/" class="btn btn-dark" role="button">
 						Refresh
 					</a>	
-				</div>
+				  </div>
+		        </form>
 			</div>
 	    </div>
 	  </div>

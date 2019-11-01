@@ -8,7 +8,7 @@ def main():
 
 @app.route('/tweet', methods=['POST', 'GET'])
 def tweet():
-    status = sentence.run()
+    status = request.form['status']
     tweet_generator.tweet(status)
     return redirect('/')
 
