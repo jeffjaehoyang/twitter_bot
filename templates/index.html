@@ -37,9 +37,16 @@
 	  	<div class="col-md-8" style="float:none; margin:auto; padding-top: 15%;">
 	    	<article class="media content-section">
 			  <div class="media-body text-center">
+			  	{% if timestamp is none %}
+			  	{% else %}
+			  		<p style="color: #81acf7">
+			  			<i class="fas fa-clock"></i>&nbsp;&nbsp;&nbsp;
+			  			<strong>Last Tweeted: {{ timestamp }}</strong>
+			  		</p>
+			  	{% endif %}
 			    <h5>
 			    	<p>
-			    		<i class="fab fa-twitter"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    		<i class="fab fa-twitter"></i>&nbsp;&nbsp;&nbsp;
 			    		Philosopher's Tweet:&nbsp;&nbsp;&nbsp;<i>"{{ sentence }}"</i>
 			    	</p>
 			    </h5>
