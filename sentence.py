@@ -1,7 +1,7 @@
 import random 
 
 def categorize():
-	f = open("/Users/Jeff/Dropbox/Coding/twitter_bot/gutenberg.txt","r")
+	f = open("gutenberg.txt","r")
 	contents = f.read()
 	listify = contents.split()
 	start = []
