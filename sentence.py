@@ -6,16 +6,18 @@ def categorize():
 	listify = contents.split()
 	start = []
 	end = []
+	body = []
 	for word in listify:
-		if word.isupper():
-			listify.remove(word)
-		elif word[0].isupper():
+		if word[0].isupper() and not word.isupper():
 			start.append(word)
-		elif word.endswith("."):
+		elif word.endswith(".") and not word.isupper():
 			end.append(word)
+		elif not word.isupper(): 
+			body.append(word)
+
 	f.close()
 
-	return [start, end, listify]
+	return [start, end, body]
 
 def generate_sentence(start, end, rest):
 	sentence = random.choice(start).replace('.', '') + ' ' \
